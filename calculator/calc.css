@@ -1,0 +1,20 @@
+#calculator{
+  border: 1px solid black; 
+  border-radius: 5px; 
+  width: 200px; /*gives compact look*/
+}
+#display{/* input box*/
+  margin:10px;/* Adds margin (spacing) around it.*/
+  width: 85%;
+  font-size: 25px;
+}
+.but_contain{ 
+  display: flex;/*arranges button  in row bydefault*/
+  justify-content: center; 
+  flex-wrap: wrap; /*button to next line if no space left*/
+}
+.button{
+  width: 45px;
+  height: 40px;
+  margin: 3px;
+}

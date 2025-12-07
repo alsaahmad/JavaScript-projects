@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cri</title>
+  <link rel="stylesheet" href="crfn.css">
+</head>
+<body>
+  <div class="game-box">
+  <h1>Rock Paper Scissors 💕</h1>
+    <button onclick="play('rock')">🪨 Rock</button>
+    <button onclick="play('paper')">📄 Paper</button>
+    <button onclick="play('scissors')">✂️ Scissors</button>
+    <div id="result" class="result"></div>
+
+  <script>
+    let score = {
+      win: 0,
+      lost: 0,
+      tie: 0
+    };
+    function gencompchoise() {
+      const r = Math.random() * 3;
+      if (r <= 1) return 'rock';
+      else if (r <= 2) return 'paper';
+      else return 'scissors';
+    }
+    function getresult(user,cmove){
+      if(user==='rock'){
+        if(cmove==='paper'){
+          score.win++;
+          return 'user won';
+        }
+        else if(cmove==='rock'){
+          score.tie++;
+          return 'its a tie';
+        }
+        else if(cmove==='scissors'){
+          score.lost++;
+          return 'computer won';
+        }
+      }
+      else if(user==='paper'){
+        if(cmove==='rock'){
+          score.win++;
+          return 'user won';
+        }
+        else if(cmove==='paper'){
+          score.tie++;
+          return 'its a tie';
+        }
+        else if(cmove==='scissors'){
+          score.lost++;
+          return 'computer won';
+        }
+      }
+      else if(user==='scissors'){
+        if(cmove==='paper'){
+          score.win++;
+          return 'user won';
+        }
+        else if(cmove==='scissors'){
+          score.tie++;
+          return 'its a tie';
+        }
+        else if(cmove==='rock'){
+          score.lost++;
+          return 'computer won';
+        }
+      }
+
+    }  
+    function play(userChoice) {
+      console.log(score);
+       const comp = gencompchoise();
+       const result = getresult(userChoice, comp);
+      alert(`You chose ${userChoice} AND Computer chose ${comp}
+      ${result}
+    Score:
+Wins: ${score.win}
+Lost: ${score.lost}
+Ties: ${score.tie}`);
+}
+    
+    
+    </script>
+  </div>
+</body>
+</html>

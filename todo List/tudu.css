@@ -1,0 +1,131 @@
+/* 🌸 General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 💜 Page Background */
+body {
+  background: linear-gradient(135deg, #ede7f6, #f9f6ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+/* 🕊️ Main Heading */
+#main-heading {
+  font-size: 2.2rem;
+  color: #9575cd;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(179, 157, 219, 0.4);
+}
+
+/* 🌼 Input Fields */
+input[type="text"],
+input[type="date"] {
+  padding: 10px 15px;
+  border: 2px solid #d1c4e9;
+  border-radius: 15px;
+  outline: none;
+  margin: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9f6ff;
+  color: #4a3f63;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #b39ddb;
+  box-shadow: 0 0 5px #cbbde2;
+}
+
+/* 💜 Add Button */
+.btn-todo {
+  padding: 10px 20px;
+  background-color: #b39ddb;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 3px 6px rgba(149, 117, 205, 0.3);
+}
+
+.btn-todo:hover {
+  background-color: #9575cd;
+  transform: scale(1.05);
+}
+
+/* 🍰 Todo Container */
+.todo-container {
+  margin-top: 30px;
+  width: 85%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(179, 157, 219, 0.25);
+  padding: 20px;
+}
+
+/* 🌷 Todo Table */
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f6ff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(179, 157, 219, 0.3);
+  animation: fadeIn 0.3s ease-in;
+}
+
+.todo-table th {
+  background-color: #b39ddb;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.todo-table td {
+  text-align: center;
+  padding: 12px;
+  color: #4a3f63;
+  border-bottom: 1px solid #d1c4e9;
+}
+
+.todo-table tr:hover {
+  background-color: #ede7f6;
+}
+
+/* 💫 Delete Button */
+.btn-delete {
+  background: #b39ddb;
+  border: none;
+  border-radius: 30%;
+  width: 50px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background: #9575cd;
+  transform: scale(1.1);
+}
+
+/* ✨ Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
