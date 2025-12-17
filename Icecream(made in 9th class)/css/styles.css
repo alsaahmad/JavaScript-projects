@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#C02550;
+}
+main
+{
+	width:1000px;
+	margin:0px auto;
+	min-height:700px;
+	background-color:#FFF;
+	overflow:auto;
+	margin-bottom:20px;
+	padding:10px;
+	box-shadow:0px 0px 25px #3C0000;
+}
+
+#header
+{
+	margin-top:20px;
+	width:1000px;
+	height:200px;
+	border-bottom:1px solid #CCC;
+}
+
+.Menu
+{
+	width:440px;
+	height:100px;
+	float:left;
+	text-align:center;
+	padding-top:30px;
+}
+
+.Menu a
+{
+	text-decoration:none;
+	color:#F00;
+	font-size:14px;
+	font-weight:bold;
+	display:inline-block;
+	padding:35px;
+	text-shadow:1px 1px 1px #CCC;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.Menu a li
+{
+	list-style:none;
+}
+.Menu a li:hover
+{
+text-shadow:none;
+transition:0.3s linear;
+}
+
+
+#logo
+{
+	width:100px;
+	float:left;
+	height:150px;
+	text-align:center;
+	transition:transform 0.5s ease-out;
+}
+
+#logo:hover
+{
+	transform:rotate(360deg);	
+}
+
+#logo img
+{
+	height:150px;
+}
+
+#slider
+{
+	width:1000px;
+	float:left;
+	height:350px;
+	border-bottom:1px solid #CCC;
+}
+
+#contentArea
+{
+	width:1000px;
+	float:left;
+}
+
+#headingTitle
+{
+	width:100px;
+	float:left;
+	font-size:18px;
+	padding-top:10px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	color:#999;
+	margin-top:20px;
+	margin-left:10px;
+}
+
+#headingImage
+{
+	
+	width:860px;
+	float:right;
+	height:44px;
+	background-image:url(../images/strip.png);
+	background-repeat:repeat-x;
+	margin-top:20px;
+	margin-right:10px;
+}
+
+#aboutContent
+{
+	width:850px;           		/* change the width to 850px */
+	margin:0px auto;  			/*  remove float:left property and add margin 0px auto;  */
+	overflow:hidden;            /*  add the overflow:hidden property  */
+	padding:10px;
+	text-align:justify;
+	font-size:15px;
+	line-height:30px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+footer
+{
+	width:990px;
+	float:left;
+	height:60px;
+	background-color:#DE547A;
+	margin-top:20px;
+	padding:5px;
+}
+#footer-menu
+{
+	width:400px;
+	float:left;
+}
+
+#footer-menu a 
+{
+    text-decoration:none;
+	color:#FFF;
+	font-size:10px;
+	font-weight:bold;
+	display:inline-block;
+	padding:3px;
+	padding-top:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+#footer-menu a  li
+{
+list-style:none;
+padding-right:9px;
+border-right:1px solid #000;
+}
+
+#footer-menu a  li:hover
+{
+color:#000;
+transition:0.3s linear;
+}
+
+#footer-text
+{
+color:#fff;
+width:200px;
+height:30px;
+margin-top:20px;
+margin-left:60px;
+float:left;
+font-size:18px;
+}
+
+#social-icons
+{
+width:300px;
+height:60px;
+float:right;
+text-align:center;
+}
+
+#social-icons a 
+{
+padding:3px;
+padding-top:25px;	
+float:right;
+}
+
+#social-icons img  
+{
+margin-top:-10px;
+border:2px solid #999;
+border-radius:50%;
+transition:transform 0.3s ease-out;
+}
+
+#social-icons img:hover  
+{
+transform:rotate(360deg);
+}
+
+.products
+{
+	width:220px;   				/* increase the width to 220px */
+	height:170px;  				/* increase the height to 170px */
+	float:left;
+	margin-left:30px;
+	padding:10px;
+	border:1px solid #CCC;
+	margin-top:30px;
+	margin-bottom:30px;
+	transition:0.2s linear;
+}
+
+.products:hover
+{
+	border:1px solid #FFF;
+	box-shadow:0px 0px 10px #EC0000;
+}
+.productImage
+{
+	width:220px;       /* increase the width to 220px */
+	height:150px;     /* increase the width to 150px */
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+
+.productImage img
+{
+	width:314px;   /* original width of the image is 314px. so if we give the width more then 314px the image quality will be bad*/
+	position:absolute;
+	transition:0.3s linear;
+	left:0;
+	top:0;
+}
+
+.products:hover img
+{
+	width:380px;   /* increase this width to 380px */
+	left:-30px;
+	top:-20px;
+}
+
+.productTitle
+{
+	width:180px;
+	float:left;
+	height:60px;
+	text-align:center;
+}
